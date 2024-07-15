@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+            max-width: 600px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        .card {
+            margin-top: 30px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Your estimated price is: {{ prediction }} Kč </h5>
+                <p class="card-text">Input details:</p>
+                <ul>
+                    <li>Number of rooms: {{ Number_of_rooms }}</li>
+                    <li>Kitchen type: {{ Kitchen_type }}</li>
+                    <li>Square meters: {{ m2 }}</li>
+                    <li>Region: {{ region }}</li>
+                </ul>
+                <a href="/" class="btn btn-primary">Go Back</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

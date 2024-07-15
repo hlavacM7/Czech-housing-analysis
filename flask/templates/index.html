@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Input Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+            max-width: 600px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Czech flats price predictor</h1>
+        <form action="/predict" method="POST">
+            <div class="form-group">
+                <label for="input1">Number of rooms:</label>
+                <input type="number" class="form-control" id="input1" name="input1" required>
+            </div>
+            <div class="form-group">
+            
+                <label for="input2">Kitchen type:</label>
+                <select class = 'form-control' id = "input2" name = "input2" required>
+                    <option value = "0"> kk </option>
+                    <option value = "1"> 1 </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input3">Meters squared:</label>
+                <input type="number" class="form-control" id="input3" name="input3" required>
+            </div>
+            <div class="form-group">
+                <label for="input4">Select a region:</label>
+                <select class="form-control" id="input4" name="input4" required>
+                    <option value="Praha">Praha</option>
+                    <option value="Jihomoravský">Jihomoravský</option>
+                    <option value="Jihočeský">Jihočeský</option>
+                    <option value="Karlovarský">Karlovarský</option>
+                    <option value="Královéhradecký">Královéhradecký</option>
+                    <option value="Liberecký">Liberecký</option>
+                    <option value="Moravskoslezský">Moravskoslezský</option>
+                    <option value="Olomoucký">Olomoucký</option>
+                    <option value="Pardubický">Pardubický</option>
+                    <option value="Plzeňský">Plzeňský</option>
+                    <option value="Středočeský">Středočeský</option>
+                    <option value="Zlínský">Zlínský</option>
+                    <option value="Vysočina">Vysočina</option>
+                    <option value="Ústecký">Ústecký</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
