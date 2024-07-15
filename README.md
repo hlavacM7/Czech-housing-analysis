@@ -3,7 +3,7 @@
 This is an end to end project in which i have implemented flask application, that is able to predict house prices in the Czech republic based on 4 features.
 
 ## Results
-- **Performance Metrics**: My main metric was R2 score, which ended up being quite good, given the data that i scraped.
+- **Performance Metrics**: My main metric was R2 score, which ended up being quite good, given the data that was available
 - Here's a quick snapshot of the results:
 
 ![Results Image](path_to_results_image)
