@@ -1,9 +1,9 @@
-# Czech housing analysis
+# Czech Housing Analysis
 
-This is an end to end project in which i have implemented flask application, that is able to predict house prices in the Czech republic based on 4 features.
+This is an end-to-end project where I have implemented a Flask application that predicts house prices in the Czech Republic based on four features.
 
 ## Results
-- **Performance Metrics**: My main metric was R2 score, which ended up being quite good, given the data that was available
+- **Performance Metrics**: My main metric was the R² score, which ended up being quite good given the available data.
 - Here's a quick snapshot of the results:
 
 ![Results Image](https://github.com/hlavacM7/Czech-housing-analysis/blob/main/Result.JPG)
@@ -11,18 +11,18 @@ This is an end to end project in which i have implemented flask application, tha
 ## Description of the Pipeline
 Here's how the magic happens:
 
-1. **Data Collection**: Data was scraped using Beautiful Soup from https://reality.idnes.cz/
-2. **Data Cleaning**: The dataset was quite messy, so I had to remove rows that contained 0 values and i also had to remove the outliers because they were influencing the result a lot
-3. **Modeling**: I have used Lazy predict which goes through all the possible regression models and shows me which one to select
-4. **Evaluation**: R2 score
-5. **Deployment**: 
+1. **Data Collection**: Data was scraped using Beautiful Soup from [reality.idnes.cz](https://reality.idnes.cz/).
+2. **Data Cleaning**: The dataset was quite messy, so I removed rows containing 0 values and outliers that were significantly influencing the results.
+3. **Modeling**: I used Lazy Predict, which evaluates various regression models and suggests the best one to use.
+4. **Evaluation**: The model was evaluated using the R² score.
+5. **Deployment**: The model was deployed using Flask.
 
 ## Tools Used
 Here's a list of the main tools and libraries I used in this project:
 
 - **Python**: The main programming language.
 - **Pandas**: For data manipulation and analysis.
-- **BeautifoulSoup**: For web scraping.
+- **Beautiful Soup**: For web scraping.
 - **Matplotlib**: For data visualization.
 - **Scikit-learn**: For machine learning algorithms.
 - **Flask**: For the web app.
